@@ -17,6 +17,8 @@ If you don't have `xsel` you just have to modify the clipboard command in `main.
 
 ## How to run
 
+### With a test container
+
 ```bash
 make
 ```
@@ -35,3 +37,15 @@ root@559d5c49fe3c:~# cat rand.txt > /dev/tcp/localhost/8888
 ```
 
 Once you exit the container will be shut down and removed and the program will shutdown.
+
+### Just the app
+
+```sh
+make run
+```
+
+Or:
+
+```sh
+go run .
+```
